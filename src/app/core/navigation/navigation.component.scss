@@ -2,7 +2,7 @@
     display:flex;
     flex-direction: column;
     height: 100vh;
-    background-color:#181818;
+    background-color:var(--dark-grey-color);
     width: 8rem;
     padding: 2rem 0;
 }
@@ -32,7 +32,7 @@ img{
   &__icon{
       height:3rem;
       width:3rem;
-      fill:var(--color-icon-primary);
+      fill:var(--secondary-font-color);
       transition: transform .1s;
       margin-bottom: .5rem;
      
@@ -41,8 +41,9 @@ img{
  
 
  &__icon-box {
+  
     cursor: pointer;
-    color:var(--color-icon-primary);
+    color:var(--secondary-font-color);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -51,15 +52,16 @@ img{
     font-size: 1rem;
  }
  &__icon-box:hover{
-    color: rgb(189, 189, 189);
+    color: var(--primary-font-color);
  }
  &__icon-box:hover>&__icon{
-    fill: rgb(189, 189, 189);
+    fill: var(--primary-font-color);
     
  }
 
  &__icon-box:active{
     transform: translateY(.5rem);
+    outline: none;
   }
 
  

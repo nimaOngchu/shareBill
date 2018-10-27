@@ -1,0 +1,48 @@
+.box{
+  
+    width:30rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    background-color: var(--color-primary);
+    transform: translate(-50%,-50%);
+    padding:5rem;
+    text-align: center;
+    margin:auto;
+    box-shadow: 4px 7px 4px #000;
+    img{
+        position: absolute;
+        top:0%;
+        left:50%;
+        transform: translate(-50%,-60%);
+       z-index: 1;
+       height: 9rem;
+       filter:drop-shadow(4px 4px 4px #000);
+       
+       
+     }
+  }
+  
+  
+  
+  
+  .btn__login {
+      margin: 2rem 0;;
+      padding:.6rem 2rem;
+      border-radius: 2.4rem;
+      border:none;
+      background-color: var(--logo-color);
+      outline: none;
+     
+      color:var(--primary-font-color);;
+      box-shadow: 4px 0px 4px #000;
+      //transition: 0.1s;
+      cursor: pointer;
+  
+      &:focus {
+          transform: scale(.9);
+      }
+      &:hover {
+          background-color:var(--logo-color);
+      }
+  }

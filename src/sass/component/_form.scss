@@ -1,0 +1,46 @@
+/* form starting stylings ------------------------------- */
+.group {
+  position: relative;
+  margin-top: 3rem;
+
+}
+
+input {
+  font-size: 1.4rem;
+  padding: .7rem;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--secondary-font-color);
+  background: none;
+  color: var(--primary-font-color);
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--logo-color);
+}
+
+/* LABEL ======================================= */
+label {
+  color: var(--secondary-font-color);
+  font-size: 1.4rem;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus~label,
+input:valid~label {
+  top: -.8rem;
+  font-size: 1.2rem;
+  color: var(--logo-color);
+
+
+}
